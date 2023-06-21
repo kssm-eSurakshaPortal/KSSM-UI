@@ -1,0 +1,75 @@
+.data-table {
+  @apply text-text-primary;
+
+  .row {
+    @apply flex  border-border pb-sm mb-sm;
+
+    span {
+      width: 70%;
+      display: contents;
+    }
+
+    h2 {
+      width: 40%;
+      @apply font-bold text-heading-s;
+    }
+
+    .value {
+      width: 50%;
+      @apply text-heading-s;
+      word-break: break-all;
+    }
+    .caption {
+      width: 70%;
+      @apply text-heading-s text-text-secondary;
+    }
+  }
+
+  .last {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.employee-data-table {
+  .row {
+    @apply flex pb-sm mb-sm;
+    border-bottom: 1px solid #edf2f9;
+
+    span {
+      width: 70%;
+      display: contents;
+    }
+
+    h2 {
+      width: 40%;
+      font-weight: 400;
+      padding: 15px;
+    }
+
+    .value {
+      width: 50%;
+      @apply text-heading-s;
+      font-weight: 700;
+      line-height: 50px !important;
+    }
+
+    .caption {
+      width: 70%;
+      @apply text-heading-s text-text-secondary;
+    }
+  }
+
+  .last {
+    border: none;
+    padding: 0;
+  }
+}
+
+
+
+.pt-citizen {.data-table {.row {
+  justify-content: space-between;
+
+}}}

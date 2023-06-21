@@ -1,0 +1,25 @@
+.language-selector {
+  @apply flex;
+}
+
+.language-selector div:not(:first-child) {
+  margin-left: 10px;
+}
+.bannerCard .language-button-container button{
+  border-radius: 0.25rem;
+  width: 6.2rem;
+  height: 2.5rem;
+  font-size: 14px;
+}
+.bannerCard .customBtn{
+  border-color: #c9cccf;
+}
+.bannerCard .customBtn:focus{
+  outline: none;
+}
+.bannerCard .customBtn-selected {
+  border-color: transparent;
+}
+.bannerCard .bannerHeader p{
+  font-size: 19px;
+}

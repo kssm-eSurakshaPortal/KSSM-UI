@@ -1,0 +1,365 @@
+@import "./login.scss";
+/* TODO: convert using tailwind */
+.employee {
+  .breadcrumb {
+    @apply ml-sm mb-lg;
+  }
+  .ground-container {
+    margin-bottom: 56px;
+    
+    @apply flex flex-col;
+  }
+  .card-home {
+    border: 1px solid #edf2f9;
+    padding: 16px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    min-width: 300px;
+    border-radius: 0.8rem;
+  }
+  .topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 4px 10px 80px;
+    background: white;
+    z-index: 9999;
+
+    img {
+      display: inline;
+
+      &.city {
+        margin-right: 8px;
+        width: 100%;
+      }
+
+      &.state {
+        height: 20px;
+        max-height: 20px;
+        width: auto;
+      }
+    }
+
+    .ulb {
+      font-weight: bold;
+    }
+
+    .right {
+      float: right;
+      margin-top: 12px;
+
+      .user-img-txt {
+        background: #f47738;
+        padding: 10px 15px;
+        border-radius: 50%;
+        color: white;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .main {
+    padding: calc(70px + 15px) 10px 10px 10px;
+  }
+
+  .loginContainer {
+    padding-top: 88px;
+  }
+
+  .react-time-picker {
+
+    width: auto;
+
+  }
+
+  .react-time-picker__wrapper {
+    border: 1px solid #c9cccf;
+    border-radius: 7px;
+  }
+
+  .react-time-picker__clock {
+    display: none;
+  }
+
+  .react-time-picker_inputGroup_leadingZero {
+    padding-right: 8px;
+    display: inline !important;
+  }
+
+  .react-time-picker_inputGroup_input {
+    padding: 0;
+    min-width: none;
+    outline: none !important;
+    border: none !important;
+  }
+
+  .react-time-picker__wrapper {
+    padding-left: 8px;
+  }
+}
+
+.citizen {
+  .main {
+    padding-top: 82px;
+    min-height: calc(100vh - 90px);
+  }
+}
+
+.citizen,
+.employee {
+  .sidebar{
+  
+    transition: all 0.2s ease;
+    position: fixed;
+    left: 0;
+    padding: 85px 0;
+    background: #ffff;
+    height:100vh;
+    color: black;
+    margin-top: 0px;
+    z-index: 10000;
+    .actions {
+      cursor: pointer;
+      padding: 0 20px;
+      margin-bottom: 32px;
+      &.active {
+        padding-right: 16px;
+        
+      }
+    }
+    .nav_drop{
+      width: 300px;
+      display: block;
+      list-style: none;
+      position: relative;
+      left: 70px;
+    }
+    
+  }
+  .display {
+    transition: all 3s 3s;
+   width: 300px;
+   position: fixed;
+   left: 0;
+   padding: 85px 0;
+   background: #ffff;
+   height: 100vh;
+   color: balck;
+   margin-top: 0px;
+   z-index: 10000;
+   .actions {
+     cursor: pointer;
+     padding: 0 20px;
+     margin-bottom: 32px;
+   }
+  }
+
+  .wrapperStyles {
+    margin-top: -5px;
+    padding-left: 20px;
+    padding-top: 10px;
+  
+    .containerStyles {
+      border: 1px solid #505A5F;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+  
+    &.leftBorder {
+      border-left: 2px solid rgba(0, 0, 0, 0.12);
+    }
+  }
+  
+  .rowContainerStyles {
+    @apply flex flex-col;
+  }
+  
+  .tableContainerStyles {
+    border: 1px solid #505A5F;
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .historyTables {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: repeat(5, minmax(100px, 1fr)); 
+  }
+  
+  .historyContent {
+    margin: 0 10px;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  .historyCheckpoint {
+    background-color: #fe7a51;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    left: -9px;
+    top: 4px;
+  
+    &.zIndex {
+      z-index: 10;
+    }
+  }
+  
+  .historyTableDateLabel {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: left;
+    display: inline-block;
+    padding-top: 5px;
+  
+  }
+  
+  .bottomMargin {
+    margin-bottom: 0px;
+  }
+  
+  .historyTableDate {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    display: inline-block;
+    padding-top: 10px;
+  }
+  
+  .historyHorizontalBar {
+    background-color: rgba(0, 0, 0, 0.12);
+    width: auto;
+    height: 2px;
+    margin-left: 16px
+  }
+
+  .smallText {
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+.citizen {
+  .sidebar {
+    margin-top: 54px;
+    min-width: 200px;
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+.link {
+  @apply text-primary-main cursor-pointer ;
+
+  :hover {
+    @apply text-primary-dark;
+  }
+}
+
+.RightMostTopBarOptions{
+  @apply inline-block float-right;
+  .EventNotificationWrapper{
+    @apply relative cursor-pointer;
+    span{
+      top: -10px;
+      right: -10px;
+      @apply absolute bg-error h-5 w-5 rounded-full text-center;
+      p{
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .employee {
+    .ground-container {
+      @apply block ml-md;
+    }
+    .breadcrumb {
+      @apply mb-lg;
+      margin-left: 0;
+    }
+    .card-home {
+      width: 330px;
+      margin-right: 16px;
+      margin-bottom: 16px;
+    }
+    .card-home-hrms {
+      width: 405px;
+      padding: 0px;
+      margin-right: 16px;
+      margin-bottom: 16px;
+    }
+    .main {
+      padding-top: 80px;
+      margin-left: 72px;
+      width: calc(100%-83px);
+    }
+  }
+
+  .citizen {
+    .main {
+      gap: 0.3rem;
+      width: 100%;
+      padding-top: 72px;
+      padding-left: 8px;
+      min-height: calc(100vh - 40px);
+    }
+
+    .center-container {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.multi-select-container {
+  .disposal-text {
+    @apply font-bold;
+  }
+
+  .disposal-info {
+    @apply my-md ml-sm;
+  }
+
+  .disposal-action-bar {
+    @apply flex justify-between items-center;
+  }
+}
+
+@screen dt {
+  .d-grid {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    column-gap: 10px;
+    row-gap: 2px;
+    margin-left: -12px;
+  }
+
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+.mb-50{
+  margin-bottom: 50px;
+}
+.mb-25{
+  margin-bottom: 25px;
+}

@@ -1,0 +1,104 @@
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.tittle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.maindeath {
+  .radios {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  .inside {
+    display: flex;
+    align-items: center;
+  }
+  .maindiv {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    @media (max-width: 1281px) {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
+  }
+  .inner {
+    width: 85%;
+  }
+}
+.buttonflex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  @media (max-width: 1281px) {
+    flex-wrap: wrap;
+  }
+  .switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    margin-right: 28px;
+  }
+
+  .next-button {
+    background: #f47738;
+    height: 2.5rem;
+    width: 150px;
+    color: #fff;
+    border-radius: 0.5rem;
+  }
+  .submit-death {
+  }
+}
+.search-wrapper {
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  margin-bottom: 24px;
+  padding: 1.5rem;
+  border-radius: 1.6rem;
+}
+.search-header {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(43, 47, 62);
+  margin-bottom: 0.5rem;
+}
+.radios {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+.radio-margin {
+  margin-right: 5px;
+}
+.radiobuttons {
+  font-size: 18px;
+}
+.radio-flex {
+  display: flex;
+}
+.statistical-radio {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.statistical-radiop {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+.statistical-flex{
+  display: flex;
+  align-items: center;
+}
